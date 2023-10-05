@@ -1,0 +1,37 @@
+Xây dựng ứng dụng Quản lý sách trong thư viện có tên Exam_Basic:
+1.	Xây dựng lớp Book trong package ra.bussiness gồm các thông tin sau:
+o	Các thuộc tính private :
+	bookId – mã sách – int (Tự động tăng)
+	bookName – tên sách – String (Không được để trống)
+	author – tác giả – String (Không được để trống)
+	descriptions – mô tả về sách – String (Không  được để trống, ít nhất 10 ký tự)
+	importPrice – giá nhập – double (phải lớn hơn 0)
+	exportPrice – giá xuất – double (phải lớn hơn 1.2 lần giá nhập)
+	interest – lợi nhuận – float
+	quantity – int – số lượng sản phẩm phải lơn hơn 0
+	bookStatus – trạng thái – Boolean (mặc định là true)
+o	Các constructor
+o	Các phương thức:
+	Các phương thức getter/setter
+	Xây dựngdựng phương thức inputData():
+	Nhập thông tin sách từ bàn phím (trừ interest)
+	Thực hiện tính interest = exportPrice – importPrice
+	Xây dựng phương thức displayData() cho phép hiển thị tất cả thông tin sách.
+2.	Xây dựng lớp có tên BookManagement có phương thức main() trong package ra.run thực hiện các chức năng sau:
+                            **************** MENU***************
+1.	Nhập số lượng sách thêm mới và nhập thông tin cho từng cuốn sách
+(Nhập số sách (n) cần nhập thông tin từ bàn phím và thực hiện nhập thông tin cho n cuốn sách đó , yêu cầu validate dữ liệu.(danh sách tối đa là 100 phần tử))
+2.	Hiển thị thông tin tất cả sách trong thư viện
+3.	Thay đổi thông tin sách theo mã sách
+4.	Xóa sách theo mã sách
+5.	Sắp xếp sách theo lợi nhuận tăng dần
+6.	Tìm kiếm tương đối sách theo tên sách hoặc mô tả
+
+7.	Nhập sách ( Cho phép người dùng nhập vào mã sách và số lượng sách cần nhập Tiến hành cộng số lượng vừa nhập vào quantity của sách có mã vừa nhập vào )
+
+8.	 Bán sách(Cho phép người dùng nhập vào tên sách và số lượng sách cần
+         bán. Tiến hành trừ số lượng vừa bán từ quantity của sách có tên sách vừa nhập , số   lượng  còn lại tron kho không được âm)
+
+9.	Thoát
+
+Lưu ý: Chỉ tính điểm khi chức năng phải thực hiện đúng theo yêu cầu.
